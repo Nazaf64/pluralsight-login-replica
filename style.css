@@ -104,11 +104,20 @@ img{
     margin-bottom: 0.8em;
 }
 
-#bg-content button {
+/* #bg-content h1:hover{
+    color: coral;
+    border: 1px solid coral;
+    transition-timing-function: linear;
+    transition-duration: 0.5s;
+    cursor: pointer;
+} */
+
+#bg-content input {
     border: 1px solid white;
     background-color: rgb(0, 0, 0, 0);
-    width: 30%;
-    box-sizing: border-box;
+    width: min-content;
+    text-align: center;
+    font-size: 1.1em;
 }
 
 #footer {
@@ -139,13 +148,13 @@ input[type="text"]{
 
 input[type="submit"]{
     margin-top: 0;
-    background-color: rgb(0, 94, 157);
+    /* background-color: rgb(0, 94, 157); */
+    background-color: rgb(248, 81, 0);
     border: none;
     font-size: 0.9em;
 }
 
 button{
-    /* padding: 0; */
     background-color: rgb(33, 37, 43);
     color: #fff;
     width: 100%;
@@ -154,4 +163,54 @@ button{
     border-radius: 3px;
     margin: 0 auto;
     font-size: 1em;
+}
+
+button:hover, #bg-content input:hover{
+    color: coral;
+    border: 1px solid coral;
+    transition-timing-function: linear;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+a:link {
+    color: #fff;
+}
+
+a:visited {
+    color: #fff;
+}
+
+#footer-link a{
+    text-decoration: underline;
+    color: coral;
+}
+
+#footer-link a:hover{
+    color: #fff;
+}
+
+@media screen and (max-width:1200px){
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media screen and (max-width:768px) {
+    main{
+        grid-template-columns: 1fr;
+    }
+
+    #form-stuff{
+        max-width: 90%;
+    }
+    
+    #bg-section {
+        display: none;
+    }
 }
