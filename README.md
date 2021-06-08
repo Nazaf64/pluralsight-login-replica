@@ -2,7 +2,7 @@
 
 This is my attempt at making a clone of the Pluralsight login page from scratch
 
-Preview Link: 
+Preview Link: https://nazaf64.github.io/pluralsight-login-replica/
 
-This is a clone of the page made in the following tutorial:
+Code/Preview from tutorial:
 https://codepen.io/bradtraversy/pen/MzyJqw
